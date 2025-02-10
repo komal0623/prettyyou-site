@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+        <input type="text"
+        id="num" name="num1"
+        placeholder="enter number">
+        <br><br>
+
+        <input type="text"
+        id="num" name="num1"
+        placeholder="enter number">
+        <br><br>
+
+        <input type="text"
+        id="num" name="num1"
+        placeholder="enter number">
+        <br><br>
+
+        <input type="button"
+
+        value="sqaure"
+        onclick="getsquare()">
+
+
+    </form>
+
+    <h1 id="d2"></h1>
+
+    <script>
+
+        function getsquare()
+        {
+            var number =document.getElementById("num").value;
+
+            console.log(number*number);
+            //document.write(number*number)
+            // alert(number*number)
+
+            document.getElementById("d2").innerHTML="square :-"+ (number*number)
+        }
+    </script>
+    
+</body>
+</html>

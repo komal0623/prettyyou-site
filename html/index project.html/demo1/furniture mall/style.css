@@ -1,0 +1,255 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Header container */
+.hfeed.site {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 0;
+}
+
+/* Navigation styles */
+.elementor-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.elementor-column {
+    flex: 1;
+    text-align: center;
+}
+
+.elementor-widget-image img {
+    width: 150px;
+    height: auto;
+}
+
+.elementor-heading-title a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+.elementskit-navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.elementskit-navbar-nav li {
+    display: inline-block;
+}
+
+.elementskit-navbar-nav a {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.elementskit-navbar-nav a:hover {
+    background-color: #ff6347;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hamburger menu */
+.elementskit-menu-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.elementskit-menu-hamburger-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+@media (max-width: 1024px) {
+    .elementskit-navbar-nav {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+    }
+
+    .elementskit-menu-hamburger {
+        display: flex;
+    }
+
+    .elementskit-menu-hamburger.active + .elementskit-navbar-nav {
+        display: flex;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .elementor-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .elementor-widget-image img {
+        width: 120px;
+    }
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Top Ad */
+.top-ad {
+    background-color: #ff4757;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #3498db;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-name {
+    color: white;
+    font-size: 2.5em;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.language-select select {
+    padding: 10px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #2ecc71;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}

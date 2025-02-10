@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form action=""name="myform"
+onsubmit="validation()">
+
+<input type="password"
+name="password1"
+placeholder="enter username">
+<br><br>
+<input type="password"
+name="password2"
+placeholder="Re-enter password">
+<br><br>
+<input type="submit">
+</form>
+
+<script>
+
+    function validation()
+    {
+
+        var
+        pass1=document.myform.password1.value;
+
+        var pass2
+
+    =document.myform.password2.value;
+
+    if(pass1==pass2)
+    {
+        return true;
+    }else
+    {
+        alert("password must be same")
+
+        return false;
+
+    }
+    }
+</script>
+    
+</body>
+</html>

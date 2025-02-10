@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d1">
+        <h1 class="c1"></h1>
+        <h2>Nothing</h2>
+        <section>
+            <h2>Exact child</h2>
+        </section>
+        <h3>lorem ipsum dolor sit amet.</h3>
+        <h3>lorem ipsum dolor sit amet.</h3>
+
+        <div id="d2">
+            <h1 class="c1"></h1>
+            <h2>Nothing</h2>
+            <h3 id="d2">id</h3>
+        </div>
+    </div>
+
+    <script>
+
+        document.querySelector("div h2").style.color="red"
+        //document.querselector("section>h2").style.color="blue"
+
+
+        document.querySelector("div+h3").style.color="blue"
+
+        //document.querySelector("div~h3").style.color="blue"
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f-container{
+            display: flex;
+            background-color: blueviolet;
+            padding: 20px;
+        }
+        .f-container>div{
+            padding: 10px;
+            background-color: bisque;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--child element-->
+
+    <div class="f-container">
+
+        <div style="flex-grow: 1;">one</div>
+        <div style="flex-grow: 2;">two</div>
+        <div style="flex-grow: 3;">three</div>
+        <div style=>four</div>
+        <div style="flex-grow: 5;">five</div>
+    </div>
+    
+</body>
+</html>
+
+<!--
+
+order
+flex-grow :
+the flex-grow specify
+the how much a flex item will grow
+reletive to rest of teh flex item
+flex-shrink:
+the flex-shrink property specify
+how much a flex item will shrink
+reletive to the rest of the item
+
+flex-basis
+flex
+align-self
+
+
+-->

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body
+{
+    background-color: rgb(180, 217, 222);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-left:100px;
+    margin-top: 200px;
+}
+
+ul > li
+{
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 1px 1px 4px white;
+    animation-name: apply;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes apply {
+    0%{
+        color: rgb(238, 148, 148);
+       
+    }
+
+    25%
+    {
+        transform: translateY(-50px);
+        letter-spacing: 35px;
+        color: rgb(228, 172, 66);
+        opacity: 0.5;
+        
+    }
+
+    70%{
+        transform: translateY(50px);
+        color: slateblue;
+        opacity: 0.3;
+       
+    }
+
+    100%
+    {
+        color: rgb(125, 125, 208);
+    }
+}
+
+ul > li:nth-child(1)
+{
+    animation-delay: 0s;
+ 
+}
+
+
+ul > li:nth-child(2)
+{
+    animation-delay: 0.4s;
+}
+
+
+ul > li:nth-child(3)
+{
+    animation-delay: 0.8s;
+}
+
+
+ul > li:nth-child(4)
+{
+    animation-delay: 1.2s;
+    
+}
+
+
+ul > li:nth-child(5)
+{
+    animation-delay: 1.6s;
+}
+
+
+ul > li:nth-child(6)
+{
+    animation-delay: 2.0s;
+}
+
+
+ul > li:nth-child(7)
+{
+    animation-delay: 2.4s;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+    <ul>
+        <li>W</li>
+        <li>E</li>
+        <li>l</li>
+        <li>C</li> 
+        <li>O</li>
+        <li>M</li>
+        <li>E</li>
+    </ul>
+    
+</body>
+</html>

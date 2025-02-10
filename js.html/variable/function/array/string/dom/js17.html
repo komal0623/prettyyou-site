@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>welcome to my class</h1>
+
+    <h2 id="d1"></h2>
+    <button id="btn">click here</button>
+
+    <script>
+
+        document.getElementById("btn").addEventListener("click",show);
+
+        document.getElementById("btn").addEventListener("dbclick",disp);
+
+        function show()
+        {
+            document.getElementById("d1").innerHTML=Date();
+            
+        }
+
+        function disp()
+        {
+            alert("cwecome....")
+        }
+    </script>
+</body>
+</html>
+
+<!--
+addeventlistener () method attache an event handler to specified element
+
+the addeventlistener() method attache an event handler to specified element without overwriting exsiting event handler
+
+you can add many event handler to one elemnt 
+you can add event listner to any 
+dom object not only html i.e without object
+-->

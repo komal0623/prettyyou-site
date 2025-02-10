@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target]{ 
+            background-color: aqua;
+            padding: 5px;
+            
+
+        }
+        a[target="::after_blank"]
+        {
+            text-decoration: none;color:black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="/html/demo2.html"
+    target="_blank">Link2</a>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+
+        }
+        img[title~="room"]
+        {
+            border: 5px solid blueviolet;
+            padding: 5px;
+
+        }
+
+        h1[class~="room"]
+        {
+            border: 5px solid blueviolet;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <img src="/image/download.jpg"
+    alt="img"title="room with flower">
+
+    <h1 class="room is here">welcome to my room</h1>
+</body>
+</html>
+
+
+<!--
+
+[attribute]
+:selectore is used to select elements with specified attribute.
+
+[attribute="value"]
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height:100px
+
+        }
+        img[title*="room"]
+        {
+            border: 5px solid blue;
+            padding: 5px;
+        }
+
+        h1[class*="he"]{
+            background-color: blueviolet;
+        }
+
+        h2[class="here"]
+        {
+            background-color: blue;
+        }
+         
+    </style>
+</head>
+<body>
+
+    <img src="/image/imported-modern-furniture-500x500.webp"
+    alt="img"title="room with furniture">
+     <h1 class="is here class">Welcome to my room</h1>
+     <h2 class="here">join my classes...</h2>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table{
+            border: 1px solid blue;
+            background-color: brown;
+            padding: 20px;
+        }
+        th,td{
+            padding: 10px;
+        }
+        input[type]
+        {
+            background-color: aqua;
+            border: none;
+            padding: 10px;
+            
+                
+            
+
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

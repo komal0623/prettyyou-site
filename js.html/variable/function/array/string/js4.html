@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var arr=["aa","sss","ggg","ll","pp","llllll","ooo"];
+
+        //copywithin
+        arr.copywithin(2,0);
+
+        document.write("<br> after within:"+arr)
+
+        //copy to index 2,the element from index 0 to 2
+
+        //copywithn
+        arr.copywithin(2,0,2);
+
+        document.write("<br> after within:"+ arr)
+
+        var arr=["11","222","333","444","555","666","777"];
+
+        document.write("<br> befires within :"+ arr)
+
+        arr.copywithin(1,3)
+        document.write("<br> after within"+ arr)
+    </script>
+</body>
+</html>
+
+<!-- 
+copywithin method overwrite the existing value 
+
+it does not add item to the array 
+
+it does not change the length of array
+-->

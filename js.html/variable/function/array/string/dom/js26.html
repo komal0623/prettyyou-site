@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            border: 1px solid black;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d1">
+        <h1 class="c1"></h1>
+        <h2>Nothing</h2>
+        <h3 id="d2">id</h3>
+    </div>
+
+    <button onclick="show()">click here</button>
+
+    <script>
+        function show()
+        {
+            var
+            x=document.getElementById("d1");
+
+            x.querySelector(".c1").innerHTML="welcome to my class"
+
+            document.querySelector("h2").style.color="blue";
+
+            document.querySelector("#d2").style.color="red";
+
+            //document.queryselector("h1,h2,h3").style.background="pink";
+
+            document.querySelector("*").style.padding="5x";
+            
+        }
+    </script>
+    
+</body>
+</html>

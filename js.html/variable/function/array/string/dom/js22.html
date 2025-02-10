@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="d1">
+        <p>lorem ipsum dolor sit amet.</p>
+        <h2 id="d2">welcome to my class</h2>
+    </div>
+
+    <button onclick="show()">add element</button>
+
+    <script>
+
+        function show()
+        {
+            let hed= document.createElement("h1");
+            let text=document.createTextNode("something is here")
+            hed.appendChild(text)
+
+            let child=document.getElementById("d2");
+
+            document.getElementById("d1").insertBefore(hed,child)
+        }
+    </script>
+    
+</body>
+</html>

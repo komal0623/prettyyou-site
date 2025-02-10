@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action=""name="myform"onsubmit="validation()">
+
+        <input type="text"
+        name="user" placeholder="enter username">
+
+        <br><br>
+        <input type="text"
+        name="password" placeholder="enter password">
+
+        <br><br>
+        <input type="submit">
+
+    </form>
+
+    <script>
+
+        function validation()
+        {
+            var
+            name=document.myform.user.value;
+            var pass=document.myform.password.value;
+
+            if(name==null || name=="")
+        {
+            alert("name must be enter")
+            
+
+        }else if(pass.length<8)
+        {
+            alert("password must be at least 8 character")
+        }
+        }
+    </script>
+    
+</body>
+</html>

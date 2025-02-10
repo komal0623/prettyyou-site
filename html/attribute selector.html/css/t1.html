@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            transition-property: width;
+            transition-duration: 2s;
+        }
+        div:hover{
+            width: 200px;
+        }
+
+        div{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: blueviolet;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-delay: 1s;
+        }
+        div:hover{
+            width: 200px;
+        }
+        #d1{
+            transition-timing-function: ease-in;
+        }
+        #d2{
+            transition-timing-function: ease-out;
+        }
+        #d3{
+            transition-timing-function: linear;
+        }
+        #d4{
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+</body>
+</html>
+
+
+
+<!--
+transition
+:it allows us to change property value smoothly, over given duration
+transition
+transition-delay
+transition-duration
+transiton-property
+transition-timing-function
+
+-->
+

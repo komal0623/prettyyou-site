@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+                 .heart{
+                       border: 3px solid red;
+                       width:150px;
+                       height: 150px;
+                       margin-left: 400px;
+                       margin-top:300px;
+                       position: relative;
+                       transform: rotate(45deg);
+                       background-color: red;
+                       animation-name:heartbeat ;
+                       animation-duration: 1.4s;
+                       animation-iteration-count: infinite;
+
+
+                 }
+                 .heart::before{
+                    content: "";
+                  position:absolute;
+                  border: 1px solid  red;
+                  background-color:red;
+                  width:150px;
+                  height: 150px;
+                  transform: translateX(-75px);
+                  border-radius: 50%;
+                 }
+                 .heart::after{
+                    content: "";
+                  position:absolute;
+                  border: 1px solid  red;
+                  background-color:red;
+                  width:150px;
+                  height: 150px;
+                  transform: translateY(-75px);
+                  border-radius: 50%;
+                 }
+
+                 @keyframes heartbeat {
+
+                    0%{
+                      transform: rotate(45deg)  scale(1.4,1.4);
+
+                  }25%{
+                    transform: rotate(45deg)  scale(1.2,1.2);
+                  }50%{
+                    transform: rotate(45deg)  scale(1.4,1.4);
+
+                  }75%{
+                    transform: rotate(45deg)  scale(1.2,1.2);
+                  }100%{
+                    transform: rotate(45deg)  scale(1.4,1.4);
+                  } 
+                    
+                 }
+        </style>
+</head>
+<body>
+
+          <div class="heart"></div>
+    
+</body>
+</html>
+

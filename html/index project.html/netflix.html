@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            background-image: url('/image/netflix-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.75); 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+        }
+        .header, .content, .footer {
+            z-index: 1; 
+            position: relative;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+            border-bottom: 3px solid #e50914;
+        }
+        .header img {
+            width: 100px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header .right-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header .right-links a {
+            color: #e5e5e5;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #e50914;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .header .right-links a:hover {
+            background-color: #f40612;
+        }
+        .header .language-select {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #141414;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .header .language-select::before {
+            content: "🌐"; /* Globe symbol for language selector */
+            font-size: 1.5rem;
+        }
+        .header .language-select select {
+            background-color: #141414;
+            color: #e5e5e5;
+            border: none;
+            font-size: 1rem;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .main {
+            text-align: center;
+            padding: 50px;
+        }
+        .footer {
+            background-color: #141414;
+            padding: 50px 20px;
+            text-align: center;
+            color: #757575;
+        }
+        .footer .columns {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+        .footer a {
+            color: #757575;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="header">
+        <img src="/image/netflix-logo.jpg" alt="Netflix Logo">
+     <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Series</a>
+            <a href="#">Movies</a>
+            <a href="#">My List</a>
+        </div>
+       
+        <div class="right-links">
+            <a href="#">Sign In</a>
+            <div class="language-select">
+                <select>
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="main"><br><br><br>
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <input type="email" placeholder="Email address" style="width: 50%; padding: 15px; font-size: 1rem; background-color: #141414; color: #e5e5e5; border: none; border-radius: 5px; margin-bottom: 10px;">
+            <button style="width: 55%; padding: 15px 30px; font-size: 1rem; background-color: red; color: white; border: none; border-radius: 5px; cursor: pointer;">Get Started ></button>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+        <div style="background-color: black; padding: 50px 20px; text-align: center; color: #fff;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Enjoy on your TV</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 40px;">Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            <div style="position: relative; display: inline-block;">
+                <img src="/image/netflix tv . jpg.jpeg" alt="TV Image" style="max-width: 100%; height: auto; border-radius: 10px;">
+               
+        </div>
+        <div style="background-color: #000; padding: 50px 20px; text-align: center; color: #fff;">
+            <h2 style="font-size: 2.5rem;margin-bottom:20px ;">Download your shows<br>to watch offline</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 40px;">save your favourite esisly and always <br>have Something to watch</p>
+            <div style="position: relative; display: inline-block;">
+                <img src="/image/nd.jpg" alt="download offline" style="max-width: 100%; height: auto; border-radius: 10px;">
+               
+        
+    </div>
+    <div style="background-color: #000; padding: 50px 20px; text-align: center; color: #fff;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Enjoy on your TV</h2>
+        <p style="font-size: 1.5rem; margin-bottom: 40px;">Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        <div style="position: relative; display: inline-block;">
+            <img src="/image/laptop.jpg" alt="netflix laptop" style="max-width: 30%; height: auto; border-radius: 10px;">
+        </div>
+        <div style="background-color: #000; padding: 50px 20px; text-align: center; color: #fff;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Create profile for kids</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 40px;">send children on adventures with their<br>favourite characters in a space made just,br>for them--free with your membership</p>
+            <div style="position: relative; display: inline-block;">
+                <img src="/image/kids.jpg" alt="profile kids" style="max-width: 100%; height: auto; border-radius: 10px;">
+               
+           
+
+    <div class="footer">
+        <p>Questions? Call 000-800-040-1843</p>
+        <div class="columns">
+            <div>
+                <a href="#">FAQ</a>
+                <a href="#">Help Centre</a>
+                <a href="#">Account</a>
+                <a href="#">Media Centre</a>
+            </div>
+            <div>
+                <a href="#">Investor Relations</a>
+                <a href="#">Jobs</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div style="margin: 20px 0;">
+            <select style="background-color: #141414; color: #fff; border: 1px solid #757575; padding: 10px; border-radius: 5px; font-size: 1rem;">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9rem;">Netflix Clone © 2024</p>
+    </div>
+</body>
+</html>

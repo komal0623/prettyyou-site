@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .product-image:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #A67B5B; /* Softer aesthetic brown */
+            color: white;
+        }
+        .search-bar {
+            position: relative;
+            width: 300px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .suggestions {
+            position: absolute;
+            background: white;
+            width: 100%;
+            display: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .suggestions div {
+            padding: 5px;
+            cursor: pointer;
+        }
+        .cart-menu {
+            display: flex;
+            align-items: center;
+        }
+        .cart-menu i {
+            font-size: 24px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .hamburger-menu {
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>LOGO</h2>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search products...">
+            <div class="suggestions" id="suggestions"></div>
+        </div>
+        <div class="cart-menu">
+            <i class="fas fa-shopping-bag"></i> <!-- Single Shopping Bag Icon -->
+            <span id="cart-count">0</span>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+    <script>
+        const products = ["Perfume under 500", "Shoes", "Watches", "Bags", "Clothes"];
+        const searchInput = document.getElementById("search");
+        const suggestions = document.getElementById("suggestions");
+        
+        searchInput.addEventListener("input", function() {
+            let value = this.value.toLowerCase();
+            suggestions.innerHTML = "";
+            if (value) {
+                let filtered = products.filter(product => product.toLowerCase().includes(value));
+                if (filtered.length > 0) {
+                    suggestions.style.display = "block";
+                    filtered.forEach(item => {
+                        let div = document.createElement("div");
+                        div.textContent = item;
+                        div.onclick = () => {
+                            searchInput.value = item;
+                            suggestions.style.display = "none";
+                        };
+                        suggestions.appendChild(div);
+                    });
+                } else {
+                    suggestions.style.display = "none";
+                }
+            } else {
+                suggestions.style.display = "none";
+            }
+        });
+        
+        function toggleMenu() {
+            alert("Menu clicked! Here you can add Help, Settings, About, etc.");
+        }
+    </script>
+</body>
+</html>

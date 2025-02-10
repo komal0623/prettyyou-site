@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var x=[3,1,5,8,2,9];
+
+        var minval=x.sort((a,b)=>{
+            return a-b;
+
+        })
+
+        document.write("min val: " +minval[0]);
+
+        var n1= x.length
+
+        document.write("<br> len: " +n1);
+
+        document.write("<br> max val:"+minval[n1-1]);
+        
+    </script>
+    
+</body>
+</html>

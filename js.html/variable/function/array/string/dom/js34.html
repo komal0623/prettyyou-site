@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input type="radio"
+    name="sesson"id="summer"
+    value="summer">summer
+
+    <input type="radio"
+    name="sesson" id="winter"
+    value="winter">winter
+
+    <input type="radio"
+    name="sesson" id="rainy"
+    value="rainy">rainy
+
+    <button type="button"onclick="CheckButton()">submit</button>
+
+    <h2 id="disp"
+    style="color:green;"></h2>
+
+    <h2 id="error"
+    style="color:red;"></h2>
+
+    <script>
+
+        function 
+
+        CheckButton()
+        {
+
+            var
+            getSetceeval=document.querySelector('input[name=sesson]:checked')
+
+            if(getSetceeval !=null)
+
+            {
+
+                document.getElementById("disp").innerHTML=getSetceeval.value+"is selected session"
+            }else{
+                document.getElementById("error").innerHTML="*you have not selected any session"
+            }
+        }
+    </script>
+</body>
+</html>

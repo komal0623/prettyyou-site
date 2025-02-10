@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function emp(id,name)// parametrised constructore (function)
+        {
+            document.write("emp here")
+
+            this.id=id;
+            this.name=name;
+
+            this.designation="devolper"
+        }
+
+        e1= new emp(111111,"heena");
+        //object
+
+        document.write("<br>"+e1.id+""+e1.name+""+e1.designation);
+        
+    </script>
+</body>
+</html>

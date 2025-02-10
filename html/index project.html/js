@@ -1,0 +1,57 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const cartCount = document.getElementById('cart');
+    let itemCount = 0;
+
+    // Function to handle adding items to the cart
+    function updateCart() {
+        itemCount += 1;
+        cartCount.textContent = `Cart (${itemCount})`;
+    }
+
+    // Add event listeners to all 'Add to Cart' buttons
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', () => {
+            updateCart();
+        });
+    });
+
+    // Sample restaurant cards (can be dynamic)
+    const restaurantCards = [
+        {
+            img: 'https://via.placeholder.com/250x150?text=Restaurant+1',
+            name: 'Restaurant 1',
+            description: 'Italian, Pizza, Desserts'
+        },
+        {
+            img: 'https://via.placeholder.com/250x150?text=Restaurant+2',
+            name: 'Restaurant 2',
+            description: 'Indian, Biryani, North Indian'
+        },
+        {
+            img: 'https://via.placeholder.com/250x150?text=Restaurant+3',
+            name: 'Restaurant 3',
+            description: 'Mexican, Tacos, Burritos'
+        },
+        {
+            img: 'https://via.placeholder.com/250x150?text=Restaurant+4',
+            name: 'Restaurant 4',
+            description: 'Chinese, Noodles, Dumplings'
+        },
+        {
+            img: 'https://via.placeholder.com/250x150?text=Restaurant+5',
+            name: 'Restaurant 5',
+            description: 'Japanese, Sushi, Ramen'
+        }
+    ];
+
+    // Function to add restaurant cards dynamically
+    function loadRestaurantCards() {
+        const container = document.getElementById('restaurant-cards');
+        restaurantCards.forEach(restaurant => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="${restaurant.img}" alt="${restaurant.name}">
+                <h3>${restaurant.name}</h3>
+                <p>${restaurant.description}</p>
+               

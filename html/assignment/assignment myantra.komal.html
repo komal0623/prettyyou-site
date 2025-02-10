@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntra</title>
+    <style>
+        .shop-section
+        div{
+            margin: 0%;
+            font-family: Arial;
+
+           }
+           .navbar{
+            height: 60px;
+            background-color: #eb1881;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+           }
+           .nav-logo{
+            height: 50px;
+            width: 100px;
+           }
+           .logo{
+            background-image: url(https://i.pinimg.com/564x/ae/20/a2/ae20a229a7dc64cdd469d405d6f4d59e.jpg);
+            background-size: cover;
+            height: 50px;
+            width: 100px;
+            }
+            .border{
+                margin: 1px;
+            }
+            .border:hover{
+                border: 1px solid white;
+            }
+            .nav-address{
+                margin-top: 8px;
+                padding-left: 1%;
+            }
+            .nav-address:hover{
+                border: 1px solid white;
+            }
+            .nav-search{
+                display: flex; 
+                background-color: pink;
+                height: 35px;
+                width: 500px;
+                margin: auto;
+                margin-left: 5px;
+            
+                border-radius: 4px;
+                
+            }
+            .search-select{
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border: none;
+            }
+            .search-input{
+                width: 100%;
+                border: none;
+            }
+            .search-icon{
+                width: 25px;
+                background-color: rgb(212, 147, 204);
+                padding-left: 5px;
+                padding-top: 8px;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+            span{
+                font-size: 0.7rem;
+                }
+            .nav-signin{
+                justify-content: space-evenly;
+                align-self: center;
+                margin-right: auto;
+                
+            }
+            .nav-signin:hover{
+                border: 1px solid white;
+            }
+            .nav-returns{
+                justify-content: space-evenly;
+                margin: auto;
+                margin-right: auto;
+            }
+            .nav-cart{
+                justify-content: space-evenly;
+                align-self:center;
+                margin: auto;
+                font-size: large;
+            }
+            .panel{
+                height: 40px;
+                background-color: #24dbbd;
+                display: flex;
+                color: white;
+                align-items: center;
+                justify-content: space-evenly;
+                }
+                .panel-ops{
+                    width: 70%;
+                }
+            .panel-ops p{
+                display: inline;
+                font-size: 0.85rem;
+                margin-left: 15px;
+            }
+            .panel-deals{
+                font-size: 0.9rem;
+                font-weight: 700;
+            }
+            .hero-section{
+                height: 300px;
+                
+                
+                background-image: url(/image/wp.vs.jpg);
+                background-size: cover;
+                
+                
+            }
+            .hero-msg{
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(241, 230, 230);
+                color: black;
+                font-size: 0.85rem;
+                position: relative;
+                top: 250px;
+                
+                
+              
+            }
+            .hero-msg a{
+                color: #3fb5ca;
+            }
+            .box{
+               /* border: 2px solid black;*/
+                height: 300px;
+                width: 23%;
+               background-color: white; 
+               padding: 10px 0px 15px;
+            }
+            .shop-section{
+                display: flex;
+                justify-content: space-evenly;
+                background-color: #e2e7e2;
+
+            }
+            .box-img{
+                height: 250px;
+                width: 210px;
+                background-repeat: no-repeat;
+                background-size: cover;
+        
+            }
+            .box-content{
+            
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            
+            
+            
+    </style>
+
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="nav-logo border" >
+            <div class="logo"></div>
+        </div>
+    <div class="nav-address">
+        <p1>address to</p1>
+        <div class="add-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg>
+            <p1>india</p1>
+        </div>
+    </div>
+    <div class="nav-search">
+        <select>
+            <option>All</option>
+        </select class="search-select">
+        <input placeholder="search myntra" class="search-input">
+        <div class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+        </div>
+    </div>
+    <div class="nav-signin"> 
+        <p1><span>hellow,sign in</span></p1>
+        <br>
+        <p2>account & list</p2>
+    </div>
+    <div class="nav-returns">
+        <p1><span>Returns</span></p1>
+        <br>
+        <p2>&Orders</p2>
+
+    </div>
+    <div class="nav-cart">
+       <div class="cart-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg>
+         cart
+       </div>
+       
+    </div>
+    
+    </div>
+    <div class="panel">
+        <div class="panel-all">
+           <i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            </i>
+              All
+        </div>
+        <div class="panel-ops"> 
+            <p>today's deals</p>
+            <p>coustemer service</p>
+            <p>registry</p>
+            <p>gift cards</p>
+            <p>sell</p>
+        </div>
+        <div class="panel-deals">
+            shop deals in Electronics
+        </div>
+    </div>
+    
+</header>
+    <div class="hero-section">
+        <div class="hero-msg">
+            <marquee width="700px" behaviour="alternate">
+            <p>you are on myntra.com you can also shop on myntra india for millions of products with fast delivery.<a>click here to go in myntra.in</a></p>
+            </marquee>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+         <div class="box-content">   
+             <h2>Clothes</h2>
+            <div class="box-img" style="background-image: url(https://i.pinimg.com/564x/60/ff/13/60ff138ced040122cdea442ceb0f7ec5.jpg);"></div>
+            <p1>see more</p1>
+         </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Accent furniture</h2>
+                <div class="box-img" style="background-image: url(https://i.pinimg.com/564x/b3/1d/64/b31d641e8ba25a8351b2e4bee8faf718.jpg);"></div>
+                <p1>shop now</p1>
+            
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Samsung ultra</h2>
+                <div class="box-img" style="background-image: url(https://i.pinimg.com/564x/b4/75/44/b4754401fd6f697af112f80bb780b65e.jpg);"></div>
+                <p1>shop now</p1>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Makeup kit</h2>
+                <div class="box-img" style="background-image: url(https://i.pinimg.com/736x/7e/42/2b/7e422bf92556997a38fd4b916e507ede.jpg);"></div>
+                <p1>shop now</p1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

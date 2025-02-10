@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+
+h1{
+    width: 50px;
+    height: 50 px;
+    /* border-top: solid; */
+    /* border-bottom: solid; */
+    /* border-left: solid; */
+    border-right: solid;
+    border-width: 4px;
+    border-color:brown;
+
+
+}
+
+    </style>
+</body>
+</html>
+
+<h1>one</h1>
+</body>
+</html>

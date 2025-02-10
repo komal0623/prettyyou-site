@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 200px;
+            background-color: blue;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d1">Hover over this text !</div>
+    <br>
+
+    <button id="clickit"onclick="disp()">click here</button>
+
+    <h2 id="d2"></h2>
+
+    <script>
+
+        document.getElementsByid("d1").addeventlistener("mouseover",show)
+
+        function show(){
+
+            document.getElementById("d2").innerHTML += "mouseover Event !!" +"<br>";
+        }
+
+        function disp(){
+
+            document.getElementById("d1").removeEventListener("mouseover",show);
+
+            document.getElementById("d2").innerHTML +=
+            "<br>"+
+            "now mouseover event doesn't work !!";
+        }
+    </script>
+
+
+    
+</body>
+</html>

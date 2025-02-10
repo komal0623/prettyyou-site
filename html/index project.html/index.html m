@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maybelline E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .navbar {
+            background-color: #ff3399;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .product-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .product-price {
+            color: #ff3399;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .footer-column {
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            margin: 10px;
+        }
+
+        .footer-column h3 {
+            border-bottom: 2px solid #ff3399;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin: 5px 0;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        Maybelline E-commerce
+    </div>
+
+    <div class="product-section">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/564x/7e/42/2b/7e422bf92556997a38fd4b916e507ede.jpg" alt="Product 1" class="product-image">
+            <div class="product-name">Maybelline Lipstick</div>
+            <div class="product-price">₹499</div>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/564x/34/f8/89/34f8898f0b3d8412e01e07b5b1b3a4b9.jpg" alt="Product 2" class="product-image">
+            <div class="product-name">Maybelline Foundation</div>
+            <div class="product-price">₹799</div>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/564x/30/b9/63/30b9632b64ac437ad7d3b460c6eac309.jpg" alt="Product 3" class="product-image">
+            <div class="product-name">Maybelline Mascara</div>
+            <div class="product-price">₹599</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-column">
+            <h3>FAQ</h3>
+            <ul>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Order Tracking</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

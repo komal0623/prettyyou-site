@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+        <input type="text"
+        id="num" name="num1"
+        oninput="show()"
+        placeholder="enter number">
+        <br><br>
+
+        <input type="button"
+        value="sqaure">
+
+    </form>
+
+    <h1 id="d1"></h1>
+
+    <script>
+
+        function show()
+        {
+
+            let x=
+            document.getElementById("num");
+
+            x.value=x.value.touppercase();
+        }
+    </script>
+    
+</body>
+</html>

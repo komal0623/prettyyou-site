@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-conatiner{
+
+            display: grid;
+            grid-template-columns: 100px 100px 100px ;
+            grid-template-rows: 80px 150px;
+            background-color: aquamarine;
+            padding: 10px;
+            gap: 10px;
+
+            /* justify-content:center;*/
+            /* justify-content:space-around;*/
+            /* justify-content:space-evenly;*/
+            /* justify-content:space-between;*/
+            /* justify-content:start;*/
+            justify-content: end;
+        }
+
+        .grid-conatiner>div{
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px 0;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-conatiner">
+        <div id="d1">one</div>
+        <div id="d2">two</div>
+        <div id="d3">three</div>
+
+        <div id="d4">four</div>
+        <div id="d5">five</div>
+        <div id="d6">six</div>
+    </div>
+    
+</body>
+</html>
+
+<!--justify-content it is used to
+alighn the whole grid inside the 
+container
+the grid total width had to be less than teh container's width
+for the justify-content property to have 
+any effect
+-->

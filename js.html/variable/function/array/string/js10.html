@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var x=["dd","ll","pp","aa","ll","bb"];
+
+        document.write(x)
+
+        document.write("<br>after sort:"+ x.sort())
+
+        document.write("<br> aftersort and revser :"+ x.reverse())
+
+        var x=["dd","ll","pp","aa","ll","bb"];
+
+        document.write("<br> before :"+x)
+
+        document.write("<br>after revser :"+ x.reverse())
+
+        var x=["dd","ll","pp","aa","ll","bb"];
+
+        document.write("<br> before :"+x)
+
+        document.write("<br>after sort:"+ x.tosorted())
+
+        document.write("<br>after orignal array not changed : "+ x)
+
+        var x=["dd","ll","pp","aa","ll","bb"];
+
+        document.write("<br> before :"+x)
+
+        document.write("<br> after reverse:" + x.toreversed())
+
+        document.write("<br>after original array not changed :"+ x)
+    </script>
+</body>
+</html>
+
+<!--
+
+the diff bet tosorted() and sort () is that the first method create a new array 
+keeping teh original array unchanged while the last method alters the original array
+s-->
